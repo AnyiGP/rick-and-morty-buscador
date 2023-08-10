@@ -96,28 +96,28 @@ mujer.addEventListener("click", (e) => {
   const female = data.results.filter(
     (personaje) => personaje.gender === "Female"
   );
-  printData(female); // []
+  printData(female); // 
   // console.log(data);
   console.log(female);
 });
 
 hombre.addEventListener("click", (e) => {
   const male = data.results.filter((personaje) => personaje.gender === "Male");
-  printData(male); // []
+  printData(male); //
   // console.log(data);
   console.log(male);
 });
 
 todos.addEventListener("click", (e) => {
   const mostrarTodos = data.results;
-  printData(mostrarTodos); // []
+  printData(mostrarTodos); //
 });
 
 /////////////PAGINATION FUNCION
 
 const pagination = async (promesa) => {
   const result = await promesa;
-  console.log(result);
+  //console.log(result);
   //pag sgte
   nextPage.addEventListener("click", () => {
     pagina += 1;
